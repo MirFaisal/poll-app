@@ -1,6 +1,6 @@
+import "flowbite";
 import Login from "./Login";
 import Register from "./Register";
-
 const LoginRegisterWrapper = () => {
   return (
     <div className="login-register w-full h-screen bg-hero-pattern-mobile md:bg-hero-pattern-desktop">
