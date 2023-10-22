@@ -31,7 +31,11 @@ const LoginRegisterWrapper = () => {
                   <li className="w-[48%]" role="presentation">
                     <button
                       onClick={() => setTab("login")}
-                      className="inline-block w-full p-4 border-b-2 text-lg"
+                      className={`${
+                        tab == "login"
+                          ? "border-[#D85545] inline-block w-full p-4 border-b-2 text-lg"
+                          : "inline-block w-full p-4 border-b-2 text-lg"
+                      }`}
                       id="login-tab"
                       data-tabs-target="#login"
                       type="button"
@@ -45,7 +49,11 @@ const LoginRegisterWrapper = () => {
                   <li className="w-[48%]" role="presentation">
                     <button
                       onClick={() => setTab("register")}
-                      className="inline-block w-full p-4 border-b-2 text-lg hover:text-gray-600 hover:border-gray-300"
+                      className={` ${
+                        tab != "login"
+                          ? "border-[#D85545] inline-block w-full p-4 border-b-2 text-lg hover:text-gray-600 hover:border-gray-300"
+                          : " inline-block w-full p-4 border-b-2 text-lg hover:text-gray-600 hover:border-gray-300"
+                      }""`}
                       id="register-tab"
                       data-tabs-target="#register"
                       type="button"
