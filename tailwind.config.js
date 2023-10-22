@@ -8,8 +8,8 @@ export default {
   theme: {
     extend: {
       backgroundImage: {
-        "hero-pattern-mobile": "url('./public/background/for_mobile.png')",
-        "hero-pattern-desktop": "url('./public/background/for_desktop.png')",
+        "hero-pattern-mobile": "url('../public/background/for_mobile.png')",
+        "hero-pattern-desktop": "url('../public/background/for_desktop.png')",
       },
     },
   },
