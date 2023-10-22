@@ -1,3 +1,4 @@
+import "flowbite";
 const Login = () => {
   return (
     <>
