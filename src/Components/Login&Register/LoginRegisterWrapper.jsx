@@ -1,7 +1,11 @@
 import "flowbite";
+import { useState } from "react";
 import Login from "./Login";
 import Register from "./Register";
+// import { Tabs } from "flowbite-react";
+
 const LoginRegisterWrapper = () => {
+  const [tab, setTab] = useState("login");
   return (
     <div className="login-register w-full h-screen bg-hero-pattern-mobile md:bg-hero-pattern-desktop">
       <div className="container mx-auto h-screen">
@@ -26,6 +30,7 @@ const LoginRegisterWrapper = () => {
                 >
                   <li className="w-[48%]" role="presentation">
                     <button
+                      onClick={() => setTab("login")}
                       className="inline-block w-full p-4 border-b-2 text-lg"
                       id="login-tab"
                       data-tabs-target="#login"
@@ -39,6 +44,7 @@ const LoginRegisterWrapper = () => {
                   </li>
                   <li className="w-[48%]" role="presentation">
                     <button
+                      onClick={() => setTab("register")}
                       className="inline-block w-full p-4 border-b-2 text-lg hover:text-gray-600 hover:border-gray-300"
                       id="register-tab"
                       data-tabs-target="#register"
@@ -55,7 +61,8 @@ const LoginRegisterWrapper = () => {
               {/* all tabs */}
               <div id="myTabContent">
                 <div
-                  className="hidden"
+                  //   className="hidden"
+                  className={`${tab == "login" ? "block" : "hidden"}`}
                   id="login"
                   role="tabpanel"
                   aria-labelledby="login-tab"
@@ -63,7 +70,8 @@ const LoginRegisterWrapper = () => {
                   <Login />
                 </div>
                 <div
-                  className="hidden"
+                  //   className="hidden"
+                  className={`${tab != "login" ? "block" : "hidden"}`}
                   id="register"
                   role="tabpanel"
                   aria-labelledby="register-tab"
