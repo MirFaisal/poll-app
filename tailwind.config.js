@@ -12,6 +12,9 @@ export default {
         "hero-pattern-mobile": "url('../public/background/for_mobile.png')",
         "hero-pattern-desktop": "url('../public/background/for_desktop.png')",
       },
+      colors: {
+        primary: "#D85545",
+      },
     },
   },
   plugins: [require("flowbite/plugin")],
