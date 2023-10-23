@@ -1,11 +1,13 @@
 import { Outlet } from "react-router-dom";
+import HeaderNav from "../Components/HeaderNav/HeaderNav";
 import Navbar from "../Components/Navbar/Navbar";
 
 const MianLayout = () => {
   return (
     <>
-          <Navbar />
-          <Outlet/>
+      <HeaderNav />
+      <Navbar />
+      <Outlet />
     </>
   );
 };
