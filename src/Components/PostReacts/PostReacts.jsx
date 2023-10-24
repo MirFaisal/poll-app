@@ -9,7 +9,7 @@ import Soaked from "../../../public/assets/soaked.svg";
 
 const PostReacts = () => {
   const [btnClicked, setBtnClicked] = useState(false);
-  const [selectedBtn, setSeletedBtn] = useState("./public/assets/heart.svg");
+  const [selectedBtn, setSeletedBtn] = useState("./assets/heart.svg");
 
   const handelReact = (e) => {
     const btn = e.target.getAttribute("src");
