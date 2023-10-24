@@ -37,7 +37,8 @@ const PostReacts = () => {
   return (
     <motion.div
       className="parentDiv relative z-10"
-      onClick={() => btnClicked === true && setBtnClicked(false)}
+      onMouseClick={() => btnClicked === true && setBtnClicked(false)}
+      // onMouseLeave={() => btnClicked === false && setBtnClicked(false)}
     >
       <motion.div
         className="w-[300px] absolute -top-20 -left-4 flex justify-around bg-white shadow p-3 rounded-full mb-5"
@@ -107,7 +108,7 @@ const PostReacts = () => {
       </motion.div>
       <motion.button
         whileHover={{ scale: 1.1 }}
-        className="flex items-center"
+        className="flex items-center focus:bg-transparent"
         onClick={() => setBtnClicked(true)}
       >
         <motion.img src={selectedBtn} className="w-6" /> &nbsp; Like
