@@ -3,14 +3,14 @@ import PostCategoryMenu from "../PostCategoryMenu/PostCategoryMenu";
 import PremiumSubCard from "../PremiumSubCard/PremiumSubCard";
 import TheVictorIsOurs from "../TheVictorIsOurs/TheVictorIsOurs";
 
-const MobileNavMenu = ({ setShow, show }) => {
+const MobileNavMenu = ({ showMenu, menu }) => {
   const path = useLocation();
   return (
     <div className="w-full h-full px-2 bg-white fixed top-0">
       <div className="h-full flex flex-col justify-between">
         <div>
           <div className="flex justify-end my-3 sm:my-5 pr-5">
-            <button onClick={() => setShow(!show)}>
+            <button onClick={() => showMenu(!menu)}>
               <i className="fa-solid fa-xmark-large xs:text-xl sm:text-2xl"></i>
             </button>
           </div>

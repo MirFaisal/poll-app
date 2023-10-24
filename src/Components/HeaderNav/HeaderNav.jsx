@@ -1,8 +1,9 @@
 import "flowbite";
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import MobileNavMenu from "../MobileNavMenu/MobileNavMenu";
 const HeaderNav = () => {
+  const [menu, setMenu] = useState(false);
   const [show, setShow] = useState(false);
   return (
     <>
@@ -63,12 +64,12 @@ const HeaderNav = () => {
                 </div>
                 <ul className="py-2" aria-labelledby="user-menu-button">
                   <li>
-                    <a
-                      href="#"
+                    <NavLink
+                      to={"/login"}
                       className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                     >
                       Sign out
-                    </a>
+                    </NavLink>
                   </li>
                 </ul>
               </div>
@@ -77,7 +78,7 @@ const HeaderNav = () => {
           <button
             data-collapse-toggle="navbar-search"
             type="button"
-            onClick={() => setShow(!show)}
+            onClick={() => setMenu(!menu)}
             className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg sm:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
             aria-controls="navbar-search"
             aria-expanded="false"
@@ -102,7 +103,7 @@ const HeaderNav = () => {
         </div>
         <div
           className={`${
-            !show
+            !menu
               ? "hidden"
               : "items-center justify-between w-full md:flex md:w-auto md:order-1"
           }`}
@@ -135,7 +136,7 @@ const HeaderNav = () => {
               </a>
             </li>
           </ul> */}
-          <MobileNavMenu setShow={setShow} show={show} />
+          <MobileNavMenu setMenu={setMenu} menu={menu} />
         </div>
       </nav>
     </>

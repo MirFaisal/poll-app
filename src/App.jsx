@@ -11,7 +11,7 @@ function App() {
       children: [],
     },
     {
-      path: "login",
+      path: "/login",
       element: <LoginRegisterWrapper />,
     },
   ]);
