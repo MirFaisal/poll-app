@@ -6,13 +6,13 @@ import MianLayout from "./Layouts/MianLayout";
 function App() {
   const route = createBrowserRouter([
     {
+      path: "login",
+      element: <LoginRegisterWrapper />,
+    },
+    {
       path: "/",
       element: <MianLayout></MianLayout>,
       children: [],
-    },
-    {
-      path: "/login",
-      element: <LoginRegisterWrapper />,
     },
   ]);
   return (
