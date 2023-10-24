@@ -1,6 +1,7 @@
 import "flowbite";
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import MobileNavMenu from "../MobileNavMenu/MobileNavMenu";
 const HeaderNav = () => {
   const [show, setShow] = useState(false);
   return (
@@ -107,7 +108,7 @@ const HeaderNav = () => {
           }`}
           id="navbar-search"
         >
-          <ul className="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white ">
+          {/* <ul className="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white ">
             <li>
               <a
                 href="#"
@@ -133,7 +134,8 @@ const HeaderNav = () => {
                 Services
               </a>
             </li>
-          </ul>
+          </ul> */}
+          <MobileNavMenu setShow={setShow} show={show} />
         </div>
       </nav>
     </>
