@@ -4,7 +4,7 @@ const Navbar = () => {
   const path = useLocation();
   console.log(path.pathname);
   return (
-    <div className="fixed top-0 left-0 hidden sm:block">
+    <div className="fixed top-0 left-0 hidden md:block z-50">
       <div className="min-w-[240px] h-screen bg-primary pl-10 pr-2">
         <div className="logo pt-10">
           <h1 className="text-white font-bold text-2xl">LOGO</h1>

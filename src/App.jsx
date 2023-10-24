@@ -1,7 +1,8 @@
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import "./App.css";
-import LoginRegisterWrapper from "./Components/Login&Register/LoginRegisterWrapper";
 import MianLayout from "./Layouts/MianLayout";
+import Home from "./Pages/Home/Home";
+import LoginRegisterWrapper from "./Pages/Login&Register/LoginRegisterWrapper";
 
 function App() {
   const route = createBrowserRouter([
@@ -12,7 +13,12 @@ function App() {
     {
       path: "/",
       element: <MianLayout></MianLayout>,
-      children: [],
+      children: [
+        {
+          path: "/",
+          element: <Home />,
+        },
+      ],
     },
   ]);
   return (
