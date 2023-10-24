@@ -20,7 +20,7 @@ const PostCard = () => {
 
       {/* post image and info */}
       <div className="w-full rounded overflow-hidden">
-        <img src="./post/post.jpg" alt="post" />
+        <img className="w-full" src="./post/post.jpg" alt="post" />
       </div>
       {/* post discription */}
       <div className="w-full rounded-full bg-primaryLight text-center px-3 py-3 mt-3">
