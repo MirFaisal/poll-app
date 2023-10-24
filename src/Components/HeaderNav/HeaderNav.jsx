@@ -12,12 +12,15 @@ const HeaderNav = () => {
               LOGO
             </span>
           </Link>
-          <input
-            type="text"
-            id="search-navbar"
-            className="hidden lg:ml-60 xl:ml-0 lg:block w-[400px] p-2 pl-10 text-sm text-gray-900 border border-gray-300 focus:ring-0 rounded bg-gray-50 focus:border-black"
-            placeholder="Search your topic"
-          />
+          <div className="hidden lg:ml-60 xl:ml-0 lg:flex items-center gap-6 ">
+            <h2 className="text-2xl font-bold">Home</h2>
+            <input
+              type="text"
+              id="search-navbar"
+              className="w-[400px] p-2 pl-10 text-sm text-gray-900 border border-gray-300 focus:ring-0 rounded bg-gray-50 focus:border-black"
+              placeholder="Search your topic"
+            />
+          </div>
 
           <div className="hidden sm:block">
             <div className="flex gap-6 items-center">
@@ -74,7 +77,7 @@ const HeaderNav = () => {
             data-collapse-toggle="navbar-search"
             type="button"
             onClick={() => setShow(!show)}
-            className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
+            className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg sm:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
             aria-controls="navbar-search"
             aria-expanded="false"
           >
