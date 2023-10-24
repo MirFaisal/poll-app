@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { useState } from "react";
+import { useLayoutEffect, useState } from "react";
 import Angry from "../../../public/assets/angry.svg";
 import Laughing from "../../../public/assets/laughing.svg";
 import Like from "../../../public/assets/like.svg";
@@ -33,82 +33,86 @@ const PostReacts = () => {
       scale: 0.6,
     },
   };
+  useLayoutEffect(() => {
+    setBtnClicked(false);
+  }, []);
 
   return (
     <motion.div
       className="parentDiv relative z-10"
-      onMouseClick={() => btnClicked === true && setBtnClicked(false)}
-      // onMouseLeave={() => btnClicked === false && setBtnClicked(false)}
+      onClick={() => btnClicked === true && setBtnClicked(false)}
     >
-      <motion.div
-        className="w-[300px] absolute -top-20 -left-4 flex justify-around bg-white shadow p-3 rounded-full mb-5"
-        variants={list}
-        animate={btnClicked ? "visible" : "hidden"}
-      >
-        <motion.img
-          whileHover={{ scale: 1.3 }}
-          src={Like}
-          alt="Like"
-          width="40"
-          onClick={(e) => {
-            handelReact(e);
-            setBtnClicked(false);
-          }}
-        />
-        <motion.img
-          whileHover={{ scale: 1.3 }}
-          src={Love}
-          alt="Love"
-          width="40"
-          onClick={(e) => {
-            handelReact(e);
-            setBtnClicked(false);
-          }}
-        />
-        <motion.img
-          whileHover={{ scale: 1.3 }}
-          src={Angry}
-          alt="Angry"
-          width="40"
-          onClick={(e) => {
-            handelReact(e);
-            setBtnClicked(false);
-          }}
-        />
-        <motion.img
-          whileHover={{ scale: 1.3 }}
-          src={Sad}
-          alt="Sad"
-          width="40"
-          onClick={(e) => {
-            handelReact(e);
-            setBtnClicked(false);
-          }}
-        />
-        <motion.img
-          whileHover={{ scale: 1.3 }}
-          src={Soaked}
-          alt="Soaked"
-          width="40"
-          onClick={(e) => {
-            handelReact(e);
-            setBtnClicked(false);
-          }}
-        />
-        <motion.img
-          whileHover={{ scale: 1.3 }}
-          src={Laughing}
-          alt="Laughing"
-          width="40"
-          onClick={(e) => {
-            handelReact(e);
-            setBtnClicked(false);
-          }}
-        />
+      <motion.div className={`${btnClicked ? "block" : "hidden"}`}>
+        <motion.div
+          className="w-[300px] absolute -top-20 -left-4 flex justify-around bg-white shadow p-3 rounded-full mb-5"
+          variants={list}
+          animate={btnClicked ? "visible" : "hidden"}
+        >
+          <motion.img
+            whileHover={{ scale: 1.3 }}
+            src={Like}
+            alt="Like"
+            width="40"
+            onClick={(e) => {
+              handelReact(e);
+              setBtnClicked(false);
+            }}
+          />
+          <motion.img
+            whileHover={{ scale: 1.3 }}
+            src={Love}
+            alt="Love"
+            width="40"
+            onClick={(e) => {
+              handelReact(e);
+              setBtnClicked(false);
+            }}
+          />
+          <motion.img
+            whileHover={{ scale: 1.3 }}
+            src={Angry}
+            alt="Angry"
+            width="40"
+            onClick={(e) => {
+              handelReact(e);
+              setBtnClicked(false);
+            }}
+          />
+          <motion.img
+            whileHover={{ scale: 1.3 }}
+            src={Sad}
+            alt="Sad"
+            width="40"
+            onClick={(e) => {
+              handelReact(e);
+              setBtnClicked(false);
+            }}
+          />
+          <motion.img
+            whileHover={{ scale: 1.3 }}
+            src={Soaked}
+            alt="Soaked"
+            width="40"
+            onClick={(e) => {
+              handelReact(e);
+              setBtnClicked(false);
+            }}
+          />
+          <motion.img
+            whileHover={{ scale: 1.3 }}
+            src={Laughing}
+            alt="Laughing"
+            width="40"
+            onClick={(e) => {
+              handelReact(e);
+              setBtnClicked(false);
+            }}
+          />
+        </motion.div>
       </motion.div>
       <motion.button
         whileHover={{ scale: 1.1 }}
-        className="flex items-center focus:bg-transparent"
+        className="flex items-center peer"
         onClick={() => setBtnClicked(true)}
       >
         <motion.img src={selectedBtn} className="w-6" /> &nbsp; Like
