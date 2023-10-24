@@ -4,7 +4,7 @@ import PostReacts from "../PostReacts/PostReacts";
 const PostCard = () => {
   const start = ["A", "B", "C", "D"];
   return (
-    <div className="mt-5 mx-1 p-4 rounded border md:max-w-screen-lg md:ml-[100px]">
+    <div className="mt-5 mx-1 p-4 rounded border md:max-w-screen-lg lg:ml-[100px]">
       {/* post author info */}
       <div className="my-3 flex items-center justify-between">
         <div className="flex gap-2 items-center">
