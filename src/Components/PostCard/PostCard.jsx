@@ -1,5 +1,6 @@
 import PollOption from "../PollOption/PollOpotion";
 import PostReacts from "../PostReacts/PostReacts";
+import ReactsChart from "../ReactsChart/ReactsChart";
 
 const PostCard = () => {
   const start = ["A", "B", "C", "D"];
@@ -37,14 +38,10 @@ const PostCard = () => {
         <PollOption></PollOption>
       </div>
       {/* post status */}
-      <div className="flex justify-between mt-16 px-2">
-        {/* like button */}
-        {/* <button className="like flex items-center gap-2 text-lg">
-          <i className="fa-light fa-heart"></i>
-          
-          7k
-        </button> */}
-        <PostReacts />
+      <div className="flex justify-between mt-16 px-2 py-2 mb-3">
+        <div className="flex gap-x-1">
+          <img src="./assets/likeicon.png" className="w-5 h-5" alt="" /> 7k
+        </div>
         <div className="flex gap-4 text-gray-600">
           <div>570 comments</div>
           <div>570 Share</div>
@@ -53,6 +50,22 @@ const PostCard = () => {
             4k
           </div>
         </div>
+      </div>
+      <div className="py-2 border-t border-b flex justify-between">
+        <PostReacts />
+        <button className="flex items-center gap-x-2">
+          <i className="fa-sharp fa-regular fa-comment"></i>
+          Commnet
+        </button>
+
+        <button className="flex items-center gap-x-2">
+          <i className="fa-light fa-share-nodes"></i>
+          Share
+        </button>
+      </div>
+      {/* react, comment and share chart */}
+      <div className="mt-5">
+        <ReactsChart />
       </div>
     </div>
   );
