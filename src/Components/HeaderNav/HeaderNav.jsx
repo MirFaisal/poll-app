@@ -8,7 +8,7 @@ const HeaderNav = () => {
   return (
     <>
       <nav className="fixed top-0 w-full bg-white z-50">
-        <div className="flex items-center justify-between md:justify-end lg:justify-between p-4 pl-64">
+        <div className="flex items-center justify-between md:justify-end lg:justify-between p-4 lg:pl-64">
           <Link to={"/"} className="flex items-center md:hidden">
             <span className="self-center text-2xl font-semibold whitespace-nowrap">
               LOGO
