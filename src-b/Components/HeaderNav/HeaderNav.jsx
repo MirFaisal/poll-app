@@ -8,7 +8,7 @@ const HeaderNav = () => {
   return (
     <>
       <nav className="fixed top-0 w-full bg-white z-50">
-        <div className="flex items-center justify-between md:justify-end lg:justify-between p-4 md:pl-64">
+        <div className="max-w-screen-xl flex items-center justify-between md:justify-end lg:justify-between mx-auto p-4">
           <Link to={"/"} className="flex items-center md:hidden">
             <span className="self-center text-2xl font-semibold whitespace-nowrap">
               LOGO
@@ -137,6 +137,12 @@ const HeaderNav = () => {
             </li>
           </ul> */}
           <MobileNavMenu setMenu={setMenu} menu={menu} />
+        </div>
+        <div className="hidden sm:block ">
+          <h2 className="text-xl ml-7 md:text-3xl font-bold md:ml-[325px] mb-3">
+            Posts
+          </h2>
+          <hr />
         </div>
       </nav>
     </>
