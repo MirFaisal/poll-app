@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.login-register {
+  /* background: url("background/for_mobile.png") no-repeat; */
+  background-position: center bottom;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
