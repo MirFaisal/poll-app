@@ -138,11 +138,6 @@ const HeaderNav = () => {
           </ul> */}
           <MobileNavMenu setMenu={setMenu} menu={menu} />
         </div>
-        <div className="hidden sm:block ">
-          <h2 className="text-xl  md:text-3xl font-bold md:max-w-screen-lg lg:mx-auto border-b pb-3">
-            Posts
-          </h2>
-        </div>
       </nav>
     </>
   );

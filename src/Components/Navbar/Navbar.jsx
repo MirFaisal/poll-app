@@ -26,7 +26,7 @@ const Navbar = () => {
               <Link to={"/notifications"}>
                 <li
                   className={`${
-                    path.pathname == "/notification"
+                    path.pathname == "/notifications"
                       ? "py-2 bg-white text-primary pl-2 flex gap-2 items-center"
                       : "py-2 text-white pl-2 flex gap-2 items-center  hover:bg-white hover:text-primary duration-300"
                   }`}

@@ -26,14 +26,62 @@ const RightAdd = () => {
         <div className="vector mt-8 border-b border-[#DBDBDB] pb-5">
           <p className="font-semibold text-lg mb-4">The victor is ours</p>
           <div className="flex flex-wrap gap-6">
-            <div className="vectorImage w-10 h-10 bg-red-400 rounded-full"></div>
-            <div className="vectorImage w-10 h-10 bg-red-400 rounded-full"></div>
-            <div className="vectorImage w-10 h-10 bg-red-400 rounded-full"></div>
-            <div className="vectorImage w-10 h-10 bg-red-400 rounded-full"></div>
-            <div className="vectorImage w-10 h-10 bg-red-400 rounded-full"></div>
-            <div className="vectorImage w-10 h-10 bg-red-400 rounded-full"></div>
-            <div className="vectorImage w-10 h-10 bg-red-400 rounded-full"></div>
-            <div className="vectorImage w-10 h-10 bg-red-400 rounded-full"></div>
+            <div className="vectorImage w-10 h-10 bg-red-400 rounded-full">
+              <img
+              className="w-full h-full object-cover rounded-full"
+              src=""
+              alt=""
+            />
+            </div>
+            <div className="vectorImage w-10 h-10 bg-red-400 rounded-full">
+              <img
+              className="w-full h-full object-cover rounded-full"
+              src=""
+              alt=""
+            />
+            </div>
+            <div className="vectorImage w-10 h-10 bg-red-400 rounded-full">
+              <img
+              className="w-full h-full object-cover rounded-full"
+              src=""
+              alt=""
+            />
+            </div>
+            <div className="vectorImage w-10 h-10 bg-red-400 rounded-full">
+              <img
+              className="w-full h-full object-cover rounded-full"
+              src=""
+              alt=""
+            />
+            </div>
+            <div className="vectorImage w-10 h-10 bg-red-400 rounded-full">
+              <img
+              className="w-full h-full object-cover rounded-full"
+              src=""
+              alt=""
+            />
+            </div>
+            <div className="vectorImage w-10 h-10 bg-red-400 rounded-full">
+              <img
+              className="w-full h-full object-cover rounded-full"
+              src=""
+              alt=""
+            />
+            </div>
+            <div className="vectorImage w-10 h-10 bg-red-400 rounded-full">
+              <img
+              className="w-full h-full object-cover rounded-full"
+              src=""
+              alt=""
+            />
+            </div>
+            <div className="vectorImage w-10 h-10 bg-red-400 rounded-full">
+              <img
+              className="w-full h-full object-cover rounded-full"
+              src=""
+              alt=""
+            />
+            </div>
           </div>
         </div>
 
