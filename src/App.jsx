@@ -3,6 +3,7 @@ import "./App.css";
 import MianLayout from "./Layouts/MianLayout";
 import Home from "./Pages/Home/Home";
 import LoginRegisterWrapper from "./Pages/Login&Register/LoginRegisterWrapper";
+import Notification from "./Pages/Notification/Notification";
 
 function App() {
   const route = createBrowserRouter([
@@ -17,6 +18,16 @@ function App() {
         {
           path: "/",
           element: <Home />,
+        },
+      ],
+    },
+    {
+      path: "/notifications",
+      element: <MianLayout></MianLayout>,
+      children: [
+        {
+          path: "/notifications",
+          element: <Notification />,
         },
       ],
     },
