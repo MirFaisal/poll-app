@@ -37,10 +37,10 @@ const Navbar = () => {
             </ul>
           </div>
           <div className="w-full h-32 mb-[120px]">
-            <Link to={"/"}>
+            <Link to={"/setting"}>
               <li
                 className={`${
-                  path.pathname == "setting"
+                  path.pathname == "/setting"
                     ? "py-2 bg-white text-primary pl-2 flex gap-2 items-center duration-300"
                     : "py-2 text-white pl-2 flex gap-2 items-center  hover:bg-white hover:text-primary"
                 }`}

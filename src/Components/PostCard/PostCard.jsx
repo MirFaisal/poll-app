@@ -3,11 +3,13 @@ import PollOption from "../PollOption/PollOpotion";
 import PostReacts from "../PostReacts/PostReacts";
 import ReactsChart from "../ReactsChart/ReactsChart";
 
-const PostCard = () => {
+const PostCard = ({ className }) => {
   const start = ["A", "B", "C", "D"];
   return (
     <>
-      <div className="mt-5 mx-1 p-4 rounded border md:max-w-screen-lg lg:mx-auto">
+      <div
+        className={`mt-5 mx-1 p-4 rounded border md:max-w-screen-lg lg:mx-auto ${className}`}
+      >
         {/* post author info */}
         <div className="my-3 flex items-center justify-between">
           <div className="flex gap-2 items-center">
@@ -25,7 +27,7 @@ const PostCard = () => {
           <img className="w-full" src="./post/post.jpg" alt="post" />
         </div>
         {/* post discription */}
-        <div className="w-full rounded-full bg-primaryLight text-center px-3 py-3 mt-3">
+        <div className="w-full md:rounded-full rounded-lg bg-primaryLight text-center px-3 py-3 mt-3">
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Non,
             delectus?

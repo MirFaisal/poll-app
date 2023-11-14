@@ -1,21 +1,36 @@
 import "flowbite";
 import { useState } from "react";
-import { Link, NavLink } from "react-router-dom";
+import { Link, NavLink, useLocation } from "react-router-dom";
 import MobileNavMenu from "../MobileNavMenu/MobileNavMenu";
 const HeaderNav = () => {
   const [menu, setMenu] = useState(false);
   const [show, setShow] = useState(false);
+  const path = useLocation();
+  let path2 = path.pathname;
+  path2 = path2.toString();
+  const withoutSlash = path2.replace(/^\/+/g, "");
+  const pathName = withoutSlash.charAt(0).toUpperCase() + withoutSlash.slice(1);
+
   return (
     <>
       <nav className="fixed top-0 w-full bg-white z-50">
-        <div className="flex items-center justify-between md:justify-end lg:justify-between p-4 md:pl-64">
+        <div className="flex items-center justify-between md:justify-end lg:justify-between p-4 md:pr-16 md:pl-64">
           <Link to={"/"} className="flex items-center md:hidden">
             <span className="self-center text-2xl font-semibold whitespace-nowrap">
               LOGO
             </span>
           </Link>
           <div className="hidden lg:ml-60 xl:ml-0 lg:flex items-center gap-6 ">
-            <h2 className="text-2xl font-bold">Home</h2>
+            <h2 className="text-2xl font-bold pl-6">
+              {path.pathname == "/"
+                ? "Home"
+                : path.pathname == "/profile"
+                ? pathName
+                : path.pathname == "/edit"
+                ? pathName + " " + "Profile"
+                : ""
+                }
+            </h2>
             <input
               type="text"
               id="search-navbar"
@@ -39,14 +54,16 @@ const HeaderNav = () => {
                 data-dropdown-placement="bottom"
               >
                 <span className="sr-only">Open user menu</span>
-                <img
-                  className="w-10 h-10 rounded-full"
-                  src="./avatar/mir.jpg"
-                  alt="user photo"
-                />
+                <NavLink to="/profile">
+                  <img
+                    className="w-10 h-10 rounded-full"
+                    src="./avatar/mir.jpg"
+                    alt="user photo"
+                  />
+                </NavLink>
               </button>
               {/* <!-- Dropdown menu --> */}
-              <div
+              {/* <div
                 className={`${
                   !show
                     ? "hidden"
@@ -72,7 +89,7 @@ const HeaderNav = () => {
                     </NavLink>
                   </li>
                 </ul>
-              </div>
+              </div> */}
             </div>
           </div>
           <button
