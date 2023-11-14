@@ -27,7 +27,7 @@ const PostCard = ({ className }) => {
           <img className="w-full" src="./post/post.jpg" alt="post" />
         </div>
         {/* post discription */}
-        <div className="w-full rounded-full bg-primaryLight text-center px-3 py-3 mt-3">
+        <div className="w-full md:rounded-full rounded-lg bg-primaryLight text-center px-3 py-3 mt-3">
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Non,
             delectus?

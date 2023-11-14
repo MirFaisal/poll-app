@@ -8,22 +8,22 @@ import RightAdd from "../../Components/RightAdd/RightAdd";
 
 const Profile = () => {
   return (
-    <div className="md:w-[calc(100%_-_617px)] ml-[280px] pt-20 md:pr-16 pb-3 md:pb-10 ">
+    <div className="md:w-[calc(100%_-_617px)] md:ml-[280px] pt-20 md:pr-16 pb-3 md:pb-10 px-3 ">
       <div>
-        <div className="flex gap-4 items-start border-b pb-3">
+        <div className="flex flex-col md:flex-row items-center gap-4 md:items-start border-b pb-3 text-center md:text-left">
           <img
             className="w-20 h-20 rounded-full"
             src="./avatar/mir.jpg"
             alt=""
           />
           <div>
-            <p className="text-lg font-semibold">Mir Fasial</p>
-            <div className="flex gap-x-3 mt-0">
+            <p className="text-xl font-semibold md:mb-0 mb-3">Mir Fasial</p>
+            <div className="flex justify-center md:justify-start gap-x-3 mt-0 text-xs md:text-sm ">
               <span>85 Posts</span>
               <span>100 Followers</span>
               <span>89 Followings</span>
             </div>
-            <div className="flex gap-3 mt-5">
+            <div className="flex justify-center md:justify-start gap-3 md:mt-5 mt-2 ">
               <button className="py-1 px-4 rounded bg-[#F6F6F6] hover:bg-[#252525] text-[#252525] hover:text-[#F6F6F6] font-medium">
                 <NavLink to="/edit">Edit Profile</NavLink>
               </button>
