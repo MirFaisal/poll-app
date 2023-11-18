@@ -28,15 +28,27 @@ const HeaderNav = () => {
                 ? pathName
                 : path.pathname == "/edit"
                 ? pathName + " " + "Profile"
-                : ""
-                }
+                : path.pathname == "/uploadcontent"
+                ? withoutSlash.charAt(0).toUpperCase() +
+                  withoutSlash.slice(1, 6) +
+                  " " +
+                  withoutSlash.slice(6)
+                : path.pathname == "/imagepoll"
+                ? "Upload content"
+                : path.pathname == "/textpoll"
+                ? "Upload content"
+                : ""}
             </h2>
-            <input
-              type="text"
-              id="search-navbar"
-              className="w-[400px] p-2 pl-10 text-sm text-gray-900 border border-gray-300 focus:ring-0 rounded bg-gray-50 focus:border-black"
-              placeholder="Search your topic"
-            />
+            {path.pathname == "/textpoll" ? (
+              ""
+            ) : (
+              <input
+                type="text"
+                id="search-navbar"
+                className="w-[400px] p-2 pl-10 text-sm text-gray-900 border border-gray-300 focus:ring-0 rounded bg-gray-50 focus:border-black"
+                placeholder="Search your topic"
+              />
+            )}
           </div>
 
           <div className="hidden sm:block">

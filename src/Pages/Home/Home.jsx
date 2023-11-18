@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import PostCard from "../../Components/PostCard/PostCard";
 import RightAdd from "../../Components/RightAdd/RightAdd";
 
@@ -51,24 +52,33 @@ const Home = () => {
                 </div>
 
                 <div class="py-4 flex gap-x-4">
-                  <div className="group  w-full p-2 md:p-4 rounded cursor-pointer hover:bg-[#D85545] flex flex-col items-center gap-y-4 border border-[#DBDBDB] hover:border-transparent transition-all duration-300">
+                  <Link
+                    className="group  w-full p-2 md:p-4 rounded cursor-pointer hover:bg-[#D85545] flex flex-col items-center gap-y-4 border border-[#DBDBDB] hover:border-transparent transition-all duration-300"
+                    to="/uploadcontent"
+                  >
                     <i class="fa-solid fa-video w-10 h-10 rounded-full flex items-center justify-center bg-[#FAE9E7] text-[#D85545]"></i>
                     <p className="group-hover:text-white text-black font-semibold transition-all duration-300">
                       Video/Image
                     </p>
-                  </div>
-                  <div className="group  w-full p-2 md:p-4 rounded cursor-pointer hover:bg-[#D85545] flex flex-col items-center gap-y-4 border border-[#DBDBDB] hover:border-transparent transition-all duration-300">
+                  </Link>
+                  <Link
+                    className="group  w-full p-2 md:p-4 rounded cursor-pointer hover:bg-[#D85545] flex flex-col items-center gap-y-4 border border-[#DBDBDB] hover:border-transparent transition-all duration-300"
+                    to="/imagepoll"
+                  >
                     <i class="fa-regular fa-image w-10 h-10 rounded-full flex items-center justify-center bg-[#FAE9E7] text-[#D85545]"></i>
                     <p className="group-hover:text-white text-black font-semibold transition-all duration-300">
                       Image Poll
                     </p>
-                  </div>
-                  <div className="group  w-full p-2 md:p-4 rounded cursor-pointer hover:bg-[#D85545] flex flex-col items-center gap-y-4 border border-[#DBDBDB] hover:border-transparent transition-all duration-300">
+                  </Link>
+                  <Link
+                    className="group  w-full p-2 md:p-4 rounded cursor-pointer hover:bg-[#D85545] flex flex-col items-center gap-y-4 border border-[#DBDBDB] hover:border-transparent transition-all duration-300"
+                    to="/textpoll"
+                  >
                     <i class="fa-solid fa-chart-simple w-10 h-10 rounded-full flex items-center justify-center bg-[#FAE9E7] text-[#D85545]"></i>
                     <p className="group-hover:text-white text-black font-semibold transition-all duration-300">
                       Poll
                     </p>
-                  </div>
+                  </Link>
                 </div>
               </div>
             </div>

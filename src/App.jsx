@@ -7,6 +7,9 @@ import Notification from "./Pages/Notification/Notification";
 import Setting from "./Pages/Setting/Setting";
 import Profile from "./Pages/Profile/Profile";
 import EditProfile from "./Pages/EditProfile/EditProfile";
+import VideoPost from "./Pages/VideoPost/VideoPost";
+import ImagePoll from "./Pages/ImagePoll/ImagePoll";
+import TextPoll from "./Pages/TextPoll/TextPoll";
 
 function App() {
   const route = createBrowserRouter([
@@ -61,6 +64,36 @@ function App() {
         {
           path: "/edit",
           element: <EditProfile />,
+        },
+      ],
+    },
+    {
+      path: "/uploadcontent",
+      element: <MianLayout></MianLayout>,
+      children: [
+        {
+          path: "/uploadcontent",
+          element: <VideoPost />,
+        },
+      ],
+    },
+    {
+      path: "/imagepoll",
+      element: <MianLayout></MianLayout>,
+      children: [
+        {
+          path: "/imagepoll",
+          element: <ImagePoll />,
+        },
+      ],
+    },
+    {
+      path: "/textpoll",
+      element: <MianLayout></MianLayout>,
+      children: [
+        {
+          path: "/textpoll",
+          element: <TextPoll />,
         },
       ],
     },
