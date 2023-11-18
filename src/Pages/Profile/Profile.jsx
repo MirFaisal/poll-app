@@ -17,7 +17,7 @@ const Profile = () => {
             alt=""
           />
           <div>
-            <div className='flex gap-x-3 items-center'>
+            <div className='flex gap-x-3 items-center justify-center'>
               <p className="text-xl font-semibold md:mb-0 mb-3">Mir Fasial</p>
               <svg
                 width="20"
