@@ -26,6 +26,7 @@ const NotiItem = () => {
               data-modal-toggle="default-modal2"
               className="block  focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-2 py-2.5 text-center"
               type="button"
+              
             >
               <i className="fa-solid fa-ellipsis-vertical"></i>
             </button>

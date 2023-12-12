@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import PostCard from "../../Components/PostCard/PostCard";
 import RightAdd from "../../Components/RightAdd/RightAdd";
 
@@ -6,7 +7,7 @@ const Home = () => {
     <>
       <div className="pt-20">
         <div>
-          <h2 className="text-xl  md:text-3xl font-bold md:max-w-screen-lg lg:mx-auto border-b pb-3">
+          <h2 className="text-xl  md:text-3xl font-bold md:max-w-screen-lg lg:mx-auto border-b pb-3 cursor-pointer">
             Posts
           </h2>
         </div>
