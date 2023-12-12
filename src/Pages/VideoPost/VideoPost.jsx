@@ -16,16 +16,18 @@ const VideoPost = () => {
             <i class="fa-solid fa-cloud-arrow-up"></i>
             <p className="text-[#363636]">Drag and Drop</p>
             <p className="text-[#363636]">or</p>
-            <input
+            <label
               className="py-1 px-4 bg-slate-100 rounded cursor-pointer mt-3"
-              type="button"
-              value="Browse File"
-            />
+              htmlFor="file"
+            >
+              Browse File
+            </label>
+            <input type="file" id="file" hidden />
           </div>
           <div className="right md:w-2/5 w-full py-6  border border-[#DBDBDB] rounded-lg p-5">
             <div>
               <h3 className="mb-7 font-bold text-lg">Upload your content</h3>
-              <form className="flex flex-col">
+              <div className="flex flex-col">
                 <label className="font-semibold text-base">Your text</label>
                 <textarea
                   className="w-full h-24 border border-slate-200 focus:ring-0 focus:border-slate-300 mt-3 mb-8"
@@ -60,7 +62,7 @@ const VideoPost = () => {
                 <button className=" bg-[#D85545] rounded flex items-center justify-center gap-x-4 py-3 px-3 text-white font-semibold">
                   Upload
                 </button>
-              </form>
+              </div>
             </div>
           </div>
         </div>

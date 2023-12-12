@@ -17,7 +17,7 @@ const Profile = () => {
             alt=""
           />
           <div>
-            <div className='flex gap-x-3 items-center justify-center'>
+            <div className="flex gap-x-3 items-center justify-center">
               <p className="text-xl font-semibold md:mb-0 mb-3">Mir Fasial</p>
               <svg
                 width="20"
@@ -241,7 +241,7 @@ const Profile = () => {
           </div>
           {/* comment here */}
           <div className="relative">
-            <i className="fa-sharp fa-regular fa-plane absolute right-3 top-1/2 translate-y-[-50%]"></i>
+            <i className="fa-solid fa-paper-plane absolute right-3 top-1/2 translate-y-[-50%]"></i>
             <input className="w-full" type="text" placeholder="Comment Here" />
           </div>
         </div>

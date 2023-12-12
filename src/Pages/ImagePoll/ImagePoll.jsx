@@ -16,41 +16,49 @@ const ImagePoll = () => {
               <i class="fa-solid fa-cloud-arrow-up"></i>
               <p className="text-[#363636]">Drag and Drop</p>
               <p className="text-[#363636]">or</p>
-              <input
+              <label
                 className="py-1 px-4 bg-slate-100 rounded cursor-pointer mt-3"
-                type="button"
-                value="Browse File"
-              />
+                htmlFor="image"
+              >
+                Browse File
+              </label>
+              <input id="image" type="file" hidden />
             </div>
             <div className="w-[49%] border-2 border-dotted border-slate-500 rounded-md flex flex-col justify-center items-center py-6">
               <i class="fa-solid fa-cloud-arrow-up"></i>
               <p className="text-[#363636]">Drag and Drop</p>
               <p className="text-[#363636]">or</p>
-              <input
+              <label
                 className="py-1 px-4 bg-slate-100 rounded cursor-pointer mt-3"
-                type="button"
-                value="Browse File"
-              />
+                htmlFor="image"
+              >
+                Browse File
+              </label>
+              <input id="image" type="file" hidden />
             </div>
             <div className="w-[49%] border-2 border-dotted border-slate-500 rounded-md flex flex-col justify-center items-center py-6">
               <i class="fa-solid fa-cloud-arrow-up"></i>
               <p className="text-[#363636]">Drag and Drop</p>
               <p className="text-[#363636]">or</p>
-              <input
+              <label
                 className="py-1 px-4 bg-slate-100 rounded cursor-pointer mt-3"
-                type="button"
-                value="Browse File"
-              />
+                htmlFor="image"
+              >
+                Browse File
+              </label>
+              <input id="image" type="file" hidden />
             </div>
             <div className="w-[49%] border-2 border-dotted border-slate-500 rounded-md flex flex-col justify-center items-center py-6">
               <i class="fa-solid fa-cloud-arrow-up"></i>
               <p className="text-[#363636]">Drag and Drop</p>
               <p className="text-[#363636]">or</p>
-              <input
+              <label
                 className="py-1 px-4 bg-slate-100 rounded cursor-pointer mt-3"
-                type="button"
-                value="Browse File"
-              />
+                htmlFor="image"
+              >
+                Browse File
+              </label>
+              <input id="image" type="file" hidden />
             </div>
           </div>
           <div className="right md:w-2/5 w-full py-6  border border-[#DBDBDB] rounded-lg p-5">
@@ -80,7 +88,7 @@ const ImagePoll = () => {
                   <i class="fa-solid fa-plus"></i>
                   <p className="font-medium">Add</p>
                 </button>
-                
+
                 <button className=" bg-[#D85545] rounded flex items-center justify-center gap-x-4 py-3 px-3 text-white font-semibold">
                   Upload
                 </button>

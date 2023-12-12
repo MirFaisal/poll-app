@@ -10,6 +10,7 @@ import EditProfile from "./Pages/EditProfile/EditProfile";
 import VideoPost from "./Pages/VideoPost/VideoPost";
 import ImagePoll from "./Pages/ImagePoll/ImagePoll";
 import TextPoll from "./Pages/TextPoll/TextPoll";
+import "flowbite";
 
 function App() {
   const route = createBrowserRouter([

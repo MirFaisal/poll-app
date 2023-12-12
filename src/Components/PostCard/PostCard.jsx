@@ -366,7 +366,7 @@ const PostCard = ({ className }) => {
           </div>
           {/* comment here */}
           <div className="relative">
-            <i className="fa-sharp fa-regular fa-plane absolute right-3 top-1/2 translate-y-[-50%]"></i>
+            <i className="fa-solid fa-paper-plane absolute right-3 top-1/2 translate-y-[-50%]"></i>
             <input className="w-full" type="text" placeholder="Comment Here" />
           </div>
         </div>
@@ -465,7 +465,7 @@ const PostCard = ({ className }) => {
           </div>
           {/* comment here */}
           <div className="relative">
-            <i className="fa-sharp fa-regular fa-plane absolute right-3 top-1/2 translate-y-[-50%]"></i>
+            <i className="fa-solid fa-paper-plane absolute right-3 top-1/2 translate-y-[-50%]"></i>
             <input className="w-full" type="text" placeholder="Comment Here" />
           </div>
         </div>

@@ -26,7 +26,11 @@ const HeaderNav = () => {
 
           <div className="hidden sm:block">
             <div className="flex gap-6 items-center">
-              <button className="py-2 px-10 bg-primary text-white">
+              <button
+                data-modal-target="default-modal"
+                data-modal-toggle="default-modal"
+                className="py-2 px-10 bg-primary text-white"
+              >
                 Create post
               </button>
               <button
